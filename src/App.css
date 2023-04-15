@@ -1,7 +1,13 @@
 body{
   text-align: left;
   margin-top: 30px;
-  background: #FFE600;
+  background: rgb(255, 230, 0,0.85);
+  
+}
+.App{
+  max-width: 960px;
+  margin: 0 auto;
+
 }
 
 header{

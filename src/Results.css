@@ -1,13 +1,9 @@
-.results h2{
-    font-size:36px;
-    font-weight: bold;
-    line-height: 1.5;
-    
-
+.results section h2{
+    font-size: 30px;
 }
 
 .results h3{
-    font-size: 20px;
+    font-size: 15px;
     opacity: 0.7;
 
 }
