@@ -3,6 +3,8 @@ import axios from "axios";
 import Results from "./Results";
 import "./Search.css";
 import Photos from "./Photos"
+
+
 export default function Search(props) {
   let [searchWord, setSearchWord] = useState(props.defaultKeyword);
   let [results, setResults] = useState(null);
@@ -13,7 +15,7 @@ export default function Search(props) {
     setResults(response.data);
   }
 
-  function handlePexelsResponse(response) {
+  function handleSheCodesResponse(response) {
     setPhotos(response.data.photos);
 
   }
@@ -25,7 +27,7 @@ export default function Search(props) {
     axios.get(apiURL).then(handleSearchResponse);
 
     let sheCodesApiUrl = `https://api.shecodes.io/images/v1/search?query=${searchWord}&key=${apiKey}`;
-    axios.get(sheCodesApiUrl).then(handlePexelsResponse);
+    axios.get(sheCodesApiUrl).then(handleSheCodesResponse);
   }
 
   function handleSubmit(event) {
@@ -64,6 +66,6 @@ export default function Search(props) {
     );
   } else {
     load();
-    return "Loaded";
+    return "Loading...";
   }
 }
