@@ -1,8 +1,17 @@
 body{
-  text-align: center;
+  text-align: left;
   margin-top: 30px;
+  background: #FFE600;
 }
 
 header{
-  font-size: x-large;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  opacity: 0.9;
+}
+
+footer{
+  text-align: center;
+  font-size: 12px
 }

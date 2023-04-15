@@ -7,7 +7,7 @@ export default function App() {
     <div className="App">
       <div className="container">
         <header className="App-header">Dictionary</header>
-        <main><Search /></main>
+        <main><Search  defaultKeyword="safari" /></main>
         <footer>
           Coded by Anna van Ruiten and hosted on <a href="https://earnest-dusk-24b82f.netlify.app">Netlify</a>
         </footer>
